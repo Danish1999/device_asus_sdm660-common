@@ -144,6 +144,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1
 
+# Boostframework
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap

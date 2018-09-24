@@ -43,6 +43,8 @@
 
 using android::base::GetProperty;
 using android::init::property_set;
+using android::base::ReadFileToString;
+using android::base::Trim;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -84,6 +86,15 @@ void check_device()
     }
 }
 
+void vendor_load_region_properties()
+{
+    char const *region_file = "/mnt/persist/flag/countrycode.txt";
+    std::string region;
+
+    if (ReadFileToString(region_file, &region))
+        property_set("ro.config.versatility", Trim(region));
+}
+
 void vendor_load_properties()
 {
     check_device();
@@ -94,4 +105,5 @@ void vendor_load_properties()
     property_set("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
+    vendor_load_region_properties();
 }

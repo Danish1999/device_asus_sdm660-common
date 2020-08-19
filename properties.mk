@@ -154,7 +154,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # IWLAN
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.iwlan.enable=true \
-    ro.telephony.iwlan_operation_mode=legacy
+    ro.telephony.iwlan_operation_mode=legacy \
+    persist.vendor.radio.data_con_rprt=1
 
 # LMKD
 PRODUCT_PROPERTY_OVERRIDES += \

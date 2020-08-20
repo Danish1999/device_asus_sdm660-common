@@ -172,4 +172,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # WFD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.debug.wfd.enable=1
+    persist.debug.wfd.enable=1 \
+    persist.hwc.enable_vds=1 \
+    persist.sys.wfd.virtual=0

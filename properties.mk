@@ -1,5 +1,4 @@
 # Audio
-# Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.af.client_heap_size_kbyte=7168 \
     af.fast_track_multiplier=1 \
@@ -166,10 +165,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdk.sensors.gestures=false \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sensors.facing=false \
-    ro.vendor.sensors.dev_ori=true \
-    ro.vendor.sensors.pmd=true \
-    ro.vendor.sensors.sta_detect=true \
-    ro.vendor.sensors.mot_detect=true
 
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \

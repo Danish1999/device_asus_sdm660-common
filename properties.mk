@@ -142,6 +142,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # IWLAN
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.iwlan.enable=true \
+    ro.telephony.iwlan_operation_mode=legacy
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -178,6 +179,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.sib16_support=1 \
     ro.telephony.default_network=22,22 \
     ro.vendor.use_data_netmgrd=true
